@@ -16,7 +16,7 @@ export default function Login() {
             <Title>Login</Title>
             <InputSection>
                 <InputComponent icon={Email} placeholder="E-mail" />
-                <InputComponent icon={Senha} placeholder="Senha" />
+                <InputComponent isPassword icon={Senha} placeholder="Senha" />
             </InputSection>
             <ButtonComponent functionOnClick={() => navigate("/home")} title="Entrar"/>
             <Alerta onClick={() => navigate("/cadastro")}>Não possui conta? Cadastre-se</Alerta>

@@ -1,6 +1,6 @@
 import styled from  'styled-components'
 
-export const Input = styled.div`
+export const InputSection = styled.div`
     display: flex;
     background: #eee;
     border-radius: 20px;
@@ -16,6 +16,9 @@ export const InputIcon = styled.img`
     width: 25px;
 `;
 
-export const InputText = styled.p`
-    color: #A7A7A7;
+export const Input = styled.input`
+    outline: none;
+    border: none;
+    background: #eee;
+    color: #666;
 `;

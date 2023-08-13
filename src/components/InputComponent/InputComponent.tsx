@@ -1,16 +1,16 @@
-import { Input, InputIcon, InputText } from "./style";
+import { Input, InputIcon, InputSection } from "./style";
 
 type InputProps = {
     placeholder: string;
     icon: string;
+    isPassword?: boolean;
 }
 
-
-export default function InputComponent({placeholder, icon} : InputProps) {
+export default function InputComponent({placeholder, icon, isPassword} : InputProps) {
     return(
-        <Input>
+        <InputSection>
             <InputIcon src={icon} />
-            <InputText> {placeholder} </InputText>
-        </Input>
+            <Input type={(isPassword) ? "password" : ""} placeholder={placeholder} />
+        </InputSection>
     );
 }

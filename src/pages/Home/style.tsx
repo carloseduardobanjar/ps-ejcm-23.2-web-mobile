@@ -29,7 +29,7 @@ export const Line = styled.div`
     justify-content: space-around;
 `;
 
-export const Input = styled.div`
+export const InputSection = styled.div`
     display: flex;
     border: 1px solid #AAAAAA;
     border-radius: 30px;
@@ -43,10 +43,10 @@ export const InputIcon = styled.img`
     padding-left: 20px;
 `;
 
-export const InputText = styled.p`
-    color: #AAAAAA;
-    padding-left: 10px;
-    
+export const Input = styled.input`
+    outline: none;
+    border: none;
+    color: #666;
 `;
 
 export const IconCarrinho = styled.img`

@@ -1,4 +1,4 @@
-import { HomeDiv, Main, Topo, Line, Input, InputIcon, InputText, IconCarrinho, Categorias, Opcao, TipoText, Cards } from "./style";
+import { HomeDiv, Main, Topo, Line, Input, InputIcon, InputSection, IconCarrinho, Categorias, Opcao, TipoText, Cards } from "./style";
 import Carrinho from '../../assets/carrinho.svg';
 import Lupa from '../../assets/lupa.svg';
 import Mario from '../../assets/mario.png';
@@ -16,10 +16,10 @@ export default function Home() {
             <Main>
                 <Topo>
                     <Line>
-                        <Input>
+                        <InputSection>
                             <InputIcon src={Lupa} />
-                            <InputText>Pesqusisar...</InputText>
-                        </Input>
+                            <Input placeholder="Pesquisar..."/>
+                        </InputSection>
                         <IconCarrinho src={Carrinho}/>
                     </Line>
                     <Categorias>

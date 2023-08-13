@@ -20,8 +20,8 @@ export default function Cadastro() {
                 <InputComponent icon={Perfil} placeholder="Nome" />
                 <InputComponent icon={Email} placeholder="E-mail" />
                 <InputComponent icon={Nascimento} placeholder="Nascimento" />
-                <InputComponent icon={Senha} placeholder="Senha" />
-                <InputComponent icon={Senha} placeholder="Confirmar sneha" />
+                <InputComponent isPassword icon={Senha} placeholder="Senha" />
+                <InputComponent isPassword icon={Senha} placeholder="Confirmar sneha" />
             </InputSection>
             <ButtonComponent functionOnClick={() => navigate("/home")} title="Cadastrar" />
             <Alerta onClick={() => navigate("/login")}>Já possui conta? Entre</Alerta>
