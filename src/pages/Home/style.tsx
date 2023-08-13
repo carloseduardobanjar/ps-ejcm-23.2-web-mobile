@@ -47,6 +47,7 @@ export const Input = styled.input`
     outline: none;
     border: none;
     color: #666;
+    font-size: 15px;
 `;
 
 export const IconCarrinho = styled.img`
